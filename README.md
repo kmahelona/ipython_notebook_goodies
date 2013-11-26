@@ -6,7 +6,8 @@ Random goodies for use in iPython Notebooks
 1. Table of Contents
 --------------------
 
-Make a table of contents for your notebook. Uses <headings> to buil TOC, and provides anchors (added where needed).
+Make a table of contents for your notebook. Uses headings (e.g. H1, H2, etc.) to build TOC, 
+and provides anchors (added where needed).
 
 **Usage:** Include the following at the top of your notebook:
 
