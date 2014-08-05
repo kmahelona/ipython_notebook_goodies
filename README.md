@@ -13,5 +13,5 @@ and provides anchors (added where needed).
 
 	<h1 id="tocheading">Table of Contents</h1>
 	<div id="toc"></div>
-	<script type="text/javascript" src="http://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js">
+	<script src="https://kmahelona.github.io/ipython_notebook_goodies/ipython_notebook_toc.js"></script>
 
