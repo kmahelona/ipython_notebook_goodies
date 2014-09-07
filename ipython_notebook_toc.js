@@ -22,8 +22,8 @@ function createTOC(){
     $(":header").each(function(i){
 	    if (this.id=='tocheading'){return;}
         
-	    titleText = this.innerHTML;
-	    openLevel = this.tagName[1];
+	    var titleText = this.innerHTML;
+	    var openLevel = this.tagName[1];
 
 	    if (levels[openLevel]){
 		levels[openLevel] += 1;
@@ -44,7 +44,8 @@ function createTOC(){
 	    if (this.id==''){this.id = this.innerHTML.replace(/ /g,"-")}
 	    var anchor = this.id;
         
-	    toc += '<li><a href="#' + anchor + '">' +  romanize(levels[openLevel].toString()) + '. ' + titleText
+	    toc += '<li><a href="#' + escape(anchor) + '">'
+		+ romanize(levels[openLevel].toString()) + '. ' + titleText
 		+ '</a></li>';
         
 	});
